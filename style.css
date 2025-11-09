@@ -1,0 +1,58 @@
+/* Apply a readable font and remove default margins */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark text */
+    text-align: center; /* Center all text content */
+}
+
+/* Style the main container for a better reading experience */
+main {
+    max-width: 800px; /* Limit width for readability */
+    margin: 50px auto; /* Center main content on the page */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the content box */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style the header */
+header {
+    background-color: #007bff; /* A nice blue color */
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Style the call-to-action button */
+.button {
+    display: inline-block;
+    background-color: #28a745; /* Green button */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1e7e34; /* Darker green on hover */
+}
+
+/* Style the footer */
+footer {
+    padding: 10px 0;
+    color: #777;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+}
