@@ -34,7 +34,8 @@ html {
         transition: none;
     }
 
-    .project-card:hover {
+    .project-card:hover,
+    .project-card--wip:hover {
         transform: none;
     }
 }
@@ -179,6 +180,13 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
 }
 
+/* Third card full-width row between tablet and wide desktop (matches prior layout). */
+@media (min-width: 640px) and (max-width: 899.98px) {
+    .project-grid > li:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
 .project-card {
     height: 100%;
     margin: 0;
@@ -212,7 +220,12 @@ body {
 }
 
 .project-card--wip:hover {
+    transform: translateY(-3px);
     border-color: rgba(245, 158, 11, 0.35);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+        0 28px 56px -20px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(245, 158, 11, 0.2);
 }
 
 .project-card__dot--wip {
