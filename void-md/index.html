@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Void.md — Apexnova flagship. Preproduction story and links to the live Kanban app on GitHub Pages.">
+    <meta name="description" content="Void.md — local-first Kanban over Markdown, File System Access API, optional GitHub Pages. Apexnova flagship pitch.">
     <meta name="theme-color" content="#0c0c0f">
     <title>Void.md — preproduction</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,43 +24,43 @@
 
     <main class="void-main">
         <header class="void-hero">
-            <p class="void-hero__badge">Flagship · tooling</p>
+            <p class="void-hero__badge">Flagship · local-first</p>
             <h1 class="void-hero__title">Void.md</h1>
             <p class="void-hero__tag">
-                A single-page Kanban board designed to work in constrained environments — including MDTM — without losing clarity or flow.
+                <strong>Visual Kanban. Plaintext soul. No cloud.</strong> Your Markdown files are the database: open the app, grant a folder via the File System Access API, and work offline-first — with an optional static deploy on GitHub Pages when you want it.
             </p>
         </header>
 
         <section class="void-panel" aria-labelledby="what-heading">
             <h2 id="what-heading">What it is</h2>
             <p>
-                <strong>Void.md</strong> is a flagship Apexnova product: a lightweight board you can ship as static GitHub Pages, open locally, or embed in a workflow where heavier tools are not an option.
+                <strong>Void.md</strong> ships as a standalone web app (including a single <code class="void-code">void.html</code> workflow): boards, filters, archives, rich notes (Tiptap) with Markdown fallback, and docs for AI-friendly column syntax. There is <strong>no hosted backend</strong> — storage is the files you choose, Git-friendly and suitable for air-gapped use.
             </p>
             <p>
-                This path (<code class="void-code">/void-md/</code>) is the short <em>preproduction</em> narrative on this site. The <strong>live application</strong> is published separately at
-                <a href="https://apexnova-dev.github.io/Void.md/" class="void-inline-link" rel="noopener noreferrer" target="_blank">apexnova-dev.github.io/Void.md</a> from its own repository.
+                This path (<code class="void-code">/void-md/</code>) is a short <em>preproduction</em> narrative on this hub. The <strong>canonical deploy</strong> from the Void.md repo lives at
+                <a href="https://apexnova-dev.github.io/Void.md/" class="void-inline-link" rel="noopener noreferrer" target="_blank">apexnova-dev.github.io/Void.md</a> (see <em>docs/github-pages.md</em> there for branch build options).
             </p>
         </section>
 
         <div class="void-pillars" role="list">
             <article class="void-pillar" role="listitem">
-                <h3>Portable</h3>
-                <p>Runs where a browser runs — no install story required for many use cases.</p>
+                <h3>Plaintext</h3>
+                <p><code class="void-code">kanban.md</code> and archives — tasks stay in files you own, diff, and back up like any repo.</p>
             </article>
             <article class="void-pillar" role="listitem">
-                <h3>Focused</h3>
-                <p>One surface for columns and cards, tuned for clarity over feature sprawl.</p>
+                <h3>Browser-native</h3>
+                <p>File System Access API for read/write to disk; optional telemetry; works when “no account” is a requirement.</p>
             </article>
             <article class="void-pillar" role="listitem">
-                <h3>Open</h3>
-                <p>Source on GitHub so you can fork, theme, or extend without a black box.</p>
+                <h3>Documented</h3>
+                <p>Architecture, AI workflow, and column-ID rules so assistants and teams do not corrupt the board format.</p>
             </article>
         </div>
 
         <section class="void-panel" aria-labelledby="links-heading">
             <h2 id="links-heading">Try it</h2>
             <p>
-                Open the deployed app, read the repo, or return to the hub. Changes to the Kanban itself ship from the Void.md repository, not from this pitch page.
+                Use the live Pages build for a zero-install demo, clone for local <code class="void-code">void.html</code> + folder workflow, or browse docs in the repo. Product changes ship from <strong>Void.md</strong> on GitHub, not from this pitch page.
             </p>
         </section>
 
