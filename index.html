@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <meta name="description" content="Apexnova development — projects and updates on GitHub.">
+    <title>Apexnova — GitHub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Welcome to My New Project!</h1>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <p class="site-header__eyebrow">apexnova-dev.github.io</p>
+            <h1>Apexnova</h1>
+            <p class="site-header__tagline">Projects and notes from Apexnova on GitHub.</p>
+        </div>
     </header>
 
-    <main>
-        <p>
-            Hello! This is the starter content for my <strong>GitHub Pages</strong> website. 
-            I'm excited to share my work here! 
-        </p>
+    <main class="site-main">
+        <section class="intro" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">This site</h2>
+            <p>
+                This is the GitHub Pages home for <strong>apexnova-dev</strong>: a simple landing page
+                you can extend with project links, docs, or other content whenever you like.
+            </p>
+        </section>
 
-        <a href="https://github.com/apexnova-dev" target="_blank" class="button">Visit My GitHub Profile</a>
+        <section class="actions" aria-labelledby="links-heading">
+            <h2 id="links-heading" class="visually-hidden">Links</h2>
+            <div class="actions__row">
+                <a href="https://github.com/apexnova-dev" class="button button--primary" rel="noopener noreferrer" target="_blank">GitHub profile</a>
+                <a href="https://github.com/apexnova-dev/apexnova-dev.github.io" class="button button--secondary" rel="noopener noreferrer" target="_blank">Site repository</a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Apexnova.Cloud.</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Apexnova.Cloud</p>
     </footer>
-
 </body>
 </html>
