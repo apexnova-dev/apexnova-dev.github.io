@@ -1,0 +1,221 @@
+/* Preproduction landing — Castor Conference App (imports ../style.css). */
+
+body.castor-page {
+    --castor-amber: #fbbf24;
+    --castor-amber-deep: #d97706;
+    --castor-slate: #0f172a;
+    --castor-panel: rgba(15, 23, 42, 0.88);
+    margin: 0;
+    min-height: 100vh;
+    color: #e2e8f0;
+    font-family: var(--font);
+    line-height: 1.65;
+    background-color: var(--castor-slate);
+}
+
+.castor-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(251, 191, 36, 0.14), transparent 50%),
+        radial-gradient(600px 400px at 100% 60%, rgba(56, 189, 248, 0.06), transparent 50%),
+        linear-gradient(180deg, #1e293b 0%, var(--castor-slate) 45%);
+    pointer-events: none;
+}
+
+.castor-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+    background: rgba(15, 23, 42, 0.72);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.castor-header__inner {
+    max-width: 52rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.castor-header a {
+    color: var(--castor-amber);
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.castor-header a:hover {
+    text-decoration: underline;
+}
+
+.castor-main {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+.castor-hero {
+    text-align: center;
+    margin-bottom: 2.75rem;
+}
+
+.castor-hero__badge {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--castor-slate);
+    background: linear-gradient(90deg, var(--castor-amber), #fcd34d);
+}
+
+.castor-hero__title {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2rem, 6vw, 2.85rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+    background: linear-gradient(115deg, #fff 0%, var(--castor-amber) 55%, #fde68a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.castor-hero__tag {
+    margin: 0 auto;
+    max-width: 34rem;
+    font-size: 1.05rem;
+    color: rgba(203, 213, 225, 0.92);
+    font-weight: 500;
+}
+
+.castor-panel {
+    padding: 1.5rem 1.4rem;
+    border-radius: 16px;
+    background: var(--castor-panel);
+    border: 1px solid rgba(251, 191, 36, 0.18);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+        0 24px 48px rgba(0, 0, 0, 0.45);
+    margin-bottom: 1.5rem;
+}
+
+.castor-panel h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--castor-amber);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.castor-panel p {
+    margin: 0 0 1rem;
+    color: rgba(226, 232, 240, 0.92);
+    font-size: 0.98rem;
+}
+
+.castor-panel p:last-child {
+    margin-bottom: 0;
+}
+
+.castor-pillars {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+@media (min-width: 560px) {
+    .castor-pillars {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.castor-pillar {
+    padding: 1.1rem 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    text-align: center;
+}
+
+.castor-pillar h3 {
+    margin: 0 0 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--castor-amber);
+}
+
+.castor-pillar p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: rgba(186, 198, 218, 0.88);
+    line-height: 1.45;
+}
+
+.castor-status {
+    margin: 2rem 0;
+    padding: 1rem 1.15rem;
+    border-radius: 12px;
+    border: 1px dashed rgba(251, 191, 36, 0.4);
+    background: rgba(251, 191, 36, 0.06);
+    font-size: 0.9rem;
+    color: rgba(226, 232, 240, 0.92);
+}
+
+.castor-status strong {
+    color: #fff;
+}
+
+.castor-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.castor-page .button--primary {
+    background: linear-gradient(135deg, var(--castor-amber), var(--castor-amber-deep));
+    color: #0f0a02;
+    border: none;
+}
+
+.castor-page .button--primary:hover {
+    filter: brightness(1.06);
+}
+
+.castor-page .button--secondary {
+    border-color: rgba(148, 163, 184, 0.35);
+    color: #f1f5f9;
+}
+
+.castor-page .button--secondary:hover {
+    border-color: var(--castor-amber);
+    background: rgba(251, 191, 36, 0.08);
+}
+
+.castor-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.25);
+    text-align: center;
+    font-size: 0.82rem;
+    color: rgba(148, 163, 184, 0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .castor-page .button--primary:hover {
+        filter: none;
+    }
+}

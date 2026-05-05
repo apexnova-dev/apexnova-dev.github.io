@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apexnova — Neon-City flagship preproduction, projects on GitHub Pages, and repositories.">
+    <meta name="description" content="Apexnova — flagship preproduction hubs (Neon-City, Castor Conference App, Void.md), GitHub Pages projects, and repositories.">
     <meta name="theme-color" content="#0f1419">
     <title>Apexnova — Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,39 +31,59 @@
             </p>
         </section>
 
-        <section class="flagship" aria-labelledby="flagship-heading">
-            <div class="flagship__glow" aria-hidden="true"></div>
-            <div class="flagship__inner">
-                <p class="flagship__eyebrow">Flagship · preproduction</p>
-                <h2 id="flagship-heading" class="flagship__title">Neon-City</h2>
-                <p class="flagship__lede">
-                    A web-forward city experience in active development. This hub links to a dedicated preproduction pitch — not the final production site yet, but the public story of the project.
+        <section class="flagship-trio" aria-labelledby="flagship-heading">
+            <div class="flagship-trio__head">
+                <p class="flagship-trio__eyebrow">Flagship · preproduction</p>
+                <h2 id="flagship-heading" class="flagship-trio__title">Core projects</h2>
+                <p class="flagship-trio__lede">
+                    Each flagship has its own GitHub Pages surface: a short public story, expectations, and links — separate from eventual production URLs or hosted apps.
                 </p>
-                <div class="flagship__actions">
-                    <a href="neon-city/" class="button button--primary">Read the Neon-City pitch</a>
-                    <a href="https://github.com/apexnova-dev/Neon-City" class="button button--secondary" rel="noopener noreferrer" target="_blank">Repository</a>
-                </div>
             </div>
+            <ul class="flagship-trio__grid">
+                <li>
+                    <article class="flagship-card flagship-card--neon" aria-labelledby="ff-neon-title">
+                        <p class="flagship-card__badge">Creative · world-building</p>
+                        <h3 id="ff-neon-title" class="flagship-card__name">Neon-City</h3>
+                        <p class="flagship-card__desc">Web-forward city experience — atmosphere, systems, and a path to public launch.</p>
+                        <div class="flagship-card__actions">
+                            <a href="neon-city/" class="flagship-card__cta flagship-card__cta--solid">Read the pitch</a>
+                            <a href="https://github.com/apexnova-dev/Neon-City" class="flagship-card__cta flagship-card__cta--line" rel="noopener noreferrer" target="_blank">Repository</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="flagship-card flagship-card--castor" aria-labelledby="ff-castor-title">
+                        <p class="flagship-card__badge">Product · conferences</p>
+                        <h3 id="ff-castor-title" class="flagship-card__name">Castor Conference App</h3>
+                        <p class="flagship-card__desc">PWA for badges, scanning, self check-in, CEUs, and admin — built for real conference operations.</p>
+                        <div class="flagship-card__actions">
+                            <a href="castor-conference/" class="flagship-card__cta flagship-card__cta--solid">Read the pitch</a>
+                            <a href="https://github.com/glyons/Castor-Conference-App" class="flagship-card__cta flagship-card__cta--line" rel="noopener noreferrer" target="_blank">Repository</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="flagship-card flagship-card--void" aria-labelledby="ff-void-title">
+                        <p class="flagship-card__badge">Tooling · MDTM</p>
+                        <h3 id="ff-void-title" class="flagship-card__name">Void.md</h3>
+                        <p class="flagship-card__desc">Kanban that runs where you need it; the live app lives on Pages, with a short story here.</p>
+                        <div class="flagship-card__actions">
+                            <a href="void-md/" class="flagship-card__cta flagship-card__cta--solid">Read the pitch</a>
+                            <a href="https://apexnova-dev.github.io/Void.md/" class="flagship-card__cta flagship-card__cta--line" rel="noopener noreferrer" target="_blank">Open live app</a>
+                            <a href="https://github.com/apexnova-dev/Void.md" class="flagship-card__cta flagship-card__cta--line" rel="noopener noreferrer" target="_blank">Repository</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
         </section>
 
         <section class="projects" aria-labelledby="projects-heading">
             <div class="section-head">
                 <h2 id="projects-heading" class="section-head__title">Projects</h2>
-                <p class="section-head__lede">What is live today, what you are standing up, and where to browse everything else.</p>
+                <p class="section-head__lede">Other Pages previews and the full list on GitHub. Flagship work is linked above.</p>
             </div>
 
             <ul class="project-grid">
-                <li>
-                    <article class="project-card">
-                        <p class="project-card__meta"><span class="project-card__dot" aria-hidden="true"></span> GitHub Pages</p>
-                        <h3 class="project-card__title">Void.md</h3>
-                        <p class="project-card__desc">A single-page Kanban board that works on MDTM.</p>
-                        <div class="project-card__actions">
-                            <a href="https://apexnova-dev.github.io/Void.md/" class="project-card__cta project-card__cta--primary" rel="noopener noreferrer" target="_blank">Open live site</a>
-                            <a href="https://github.com/apexnova-dev/Void.md" class="project-card__cta project-card__cta--ghost" rel="noopener noreferrer" target="_blank">Repository</a>
-                        </div>
-                    </article>
-                </li>
                 <li>
                     <article class="project-card project-card--wip">
                         <p class="project-card__meta"><span class="project-card__dot project-card__dot--wip" aria-hidden="true"></span> In progress · GitHub Pages</p>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Castor Conference App — Apexnova flagship. Preproduction overview: conference PWA scope, status, and links.">
+    <meta name="theme-color" content="#0f172a">
+    <title>Castor Conference App — preproduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="castor-conference.css">
+</head>
+<body class="castor-page">
+    <div class="castor-bg" aria-hidden="true"></div>
+
+    <header class="castor-header">
+        <div class="castor-header__inner">
+            <a href="../">← Apexnova home</a>
+            <a href="https://github.com/glyons/Castor-Conference-App" rel="noopener noreferrer" target="_blank">Source on GitHub</a>
+        </div>
+    </header>
+
+    <main class="castor-main">
+        <header class="castor-hero">
+            <p class="castor-hero__badge">Flagship · preproduction</p>
+            <h1 class="castor-hero__title">Castor Conference App</h1>
+            <p class="castor-hero__tag">
+                A progressive web app for real conference operations: digital badges, staff scanning, geofenced self check-in, CEUs, certificates, and admin tooling — not a marketing microsite, but software meant for event day.
+            </p>
+        </header>
+
+        <section class="castor-panel" aria-labelledby="what-heading">
+            <h2 id="what-heading">What it is</h2>
+            <p>
+                <strong>Castor</strong> is built for attendance workflows that have to work under pressure: sessions, rooms, registry exports, and attendees who may be offline or on mobile data.
+                The stack is React, TypeScript, Vite, and Supabase — packaged as a PWA so staff and attendees can rely on it in the field.
+            </p>
+            <p>
+                This GitHub Pages page is the <em>preproduction</em> story for the project on <strong>apexnova-dev.github.io</strong>. The hosted app itself is deployed separately (for example on Vercel or another host) with your Supabase project and secrets — not from this static pitch.
+            </p>
+        </section>
+
+        <div class="castor-pillars" role="list">
+            <article class="castor-pillar" role="listitem">
+                <h3>Floor</h3>
+                <p>Scanner flows, room QR, self check-in, and badges tuned for how conferences actually run.</p>
+            </article>
+            <article class="castor-pillar" role="listitem">
+                <h3>Compliance</h3>
+                <p>CEU tracking, certificates, evaluations, and exports aligned with registry-style reporting needs.</p>
+            </article>
+            <article class="castor-pillar" role="listitem">
+                <h3>Control</h3>
+                <p>Admin for sessions, registrations, announcements, vendors, and support paths when something breaks.</p>
+            </article>
+        </div>
+
+        <section class="castor-panel" aria-labelledby="status-heading">
+            <h2 id="status-heading">Where things stand</h2>
+            <p>
+                Active development continues in the repository: migrations, edge functions for room tokens, documentation for launch checklists, and hardening for production demos.
+                Treat any public demo URL as <strong>staging</strong> unless you have explicitly promoted it for a live event.
+            </p>
+        </section>
+
+        <p class="castor-status" role="note">
+            <strong>Not the hosted app.</strong> This URL only describes Castor. To run or deploy the PWA, clone the repo, configure Supabase, and follow the project README and deployment docs.
+        </p>
+
+        <div class="castor-cta-row">
+            <a href="https://github.com/glyons/Castor-Conference-App" class="button button--primary" rel="noopener noreferrer" target="_blank">Track on GitHub</a>
+            <a href="../" class="button button--secondary">Back to Apexnova hub</a>
+        </div>
+
+        <footer class="castor-footer">
+            <p>Castor Conference App · Apexnova · preproduction pitch</p>
+        </footer>
+    </main>
+</body>
+</html>

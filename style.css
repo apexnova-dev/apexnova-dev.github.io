@@ -148,35 +148,17 @@ body {
     font-weight: 600;
 }
 
-.flagship {
-    position: relative;
+.flagship-trio {
     margin: 0 0 2.75rem;
-    padding: 1px;
-    border-radius: calc(var(--radius) + 2px);
-    background: linear-gradient(135deg, rgba(255, 61, 154, 0.45), rgba(57, 246, 255, 0.35), rgba(167, 139, 250, 0.35));
-    box-shadow: 0 0 48px rgba(57, 246, 255, 0.08);
 }
 
-.flagship__glow {
-    position: absolute;
-    inset: -20%;
-    z-index: 0;
-    background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255, 61, 154, 0.12), transparent 55%);
-    pointer-events: none;
-}
-
-.flagship__inner {
-    position: relative;
-    z-index: 1;
-    padding: 1.6rem 1.35rem 1.5rem;
-    border-radius: var(--radius);
-    background: linear-gradient(165deg, rgba(22, 18, 40, 0.97) 0%, rgba(12, 14, 24, 0.98) 100%);
-    border: 1px solid rgba(57, 246, 255, 0.12);
+.flagship-trio__head {
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.flagship__eyebrow {
-    margin: 0 0 0.5rem;
+.flagship-trio__eyebrow {
+    margin: 0 0 0.45rem;
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -184,31 +166,194 @@ body {
     color: #f472b6;
 }
 
-.flagship__title {
-    margin: 0 0 0.65rem;
-    font-size: clamp(1.65rem, 4vw, 2.1rem);
+.flagship-trio__title {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.35rem, 3.5vw, 1.75rem);
     font-weight: 800;
     letter-spacing: -0.02em;
-    line-height: 1.1;
-    background: linear-gradient(100deg, #f8fafc 0%, #7dd3fc 40%, #f472b6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--text);
 }
 
-.flagship__lede {
-    margin: 0 auto 1.25rem;
-    max-width: 38rem;
+.flagship-trio__lede {
+    margin: 0 auto;
+    max-width: 40rem;
     font-size: 0.95rem;
     line-height: 1.6;
     color: var(--muted);
 }
 
-.flagship__actions {
+.flagship-trio__grid {
+    list-style: none;
+    margin: 1.35rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+    .flagship-trio__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.flagship-card {
+    height: 100%;
+    margin: 0;
+    padding: 1.35rem 1.25rem 1.25rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: linear-gradient(160deg, rgba(26, 36, 51, 0.96) 0%, rgba(12, 16, 24, 0.94) 100%);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+        0 20px 40px -22px rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+}
+
+.flagship-card--neon {
+    border-color: rgba(244, 114, 182, 0.28);
+    background: linear-gradient(165deg, rgba(36, 22, 48, 0.92) 0%, rgba(10, 12, 22, 0.95) 100%);
+    box-shadow:
+        0 0 0 1px rgba(57, 246, 255, 0.06) inset,
+        0 0 36px rgba(255, 61, 154, 0.06);
+}
+
+.flagship-card--castor {
+    border-color: rgba(251, 191, 36, 0.22);
+    background: linear-gradient(165deg, rgba(30, 27, 18, 0.94) 0%, rgba(12, 14, 22, 0.96) 100%);
+    box-shadow:
+        0 0 0 1px rgba(251, 191, 36, 0.05) inset,
+        0 0 32px rgba(251, 191, 36, 0.05);
+}
+
+.flagship-card--void {
+    border-color: rgba(148, 163, 184, 0.25);
+    background: linear-gradient(165deg, rgba(22, 26, 36, 0.95) 0%, rgba(8, 10, 18, 0.97) 100%);
+}
+
+.flagship-card__badge {
+    margin: 0 0 0.65rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.flagship-card--neon .flagship-card__badge {
+    color: #f9a8d4;
+}
+
+.flagship-card--castor .flagship-card__badge {
+    color: #fcd34d;
+}
+
+.flagship-card--void .flagship-card__badge {
+    color: #cbd5e1;
+}
+
+.flagship-card__name {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.flagship-card--neon .flagship-card__name {
+    background: linear-gradient(100deg, #fff 0%, #7dd3fc 50%, #f472b6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.flagship-card__desc {
+    margin: 0 0 1.1rem;
+    flex: 1;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: var(--muted);
+}
+
+.flagship-card__actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.5rem;
+}
+
+.flagship-card__cta {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    padding: 0.5rem 0.85rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.flagship-card__cta:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.flagship-card__cta--solid {
+    background: var(--accent);
+    color: #0a1620;
+}
+
+.flagship-card__cta--solid:hover {
+    background: var(--accent-hover);
+}
+
+.flagship-card--neon .flagship-card__cta--solid {
+    background: linear-gradient(135deg, #39f6ff, #2ecfff);
+    color: #050814;
+}
+
+.flagship-card--neon .flagship-card__cta--solid:hover {
+    filter: brightness(1.06);
+}
+
+.flagship-card--castor .flagship-card__cta--solid {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #1a1204;
+}
+
+.flagship-card--castor .flagship-card__cta--solid:hover {
+    filter: brightness(1.05);
+}
+
+.flagship-card--void .flagship-card__cta--solid {
+    background: linear-gradient(135deg, #94a3b8, #64748b);
+    color: #0a0e14;
+}
+
+.flagship-card--void .flagship-card__cta--solid:hover {
+    filter: brightness(1.08);
+}
+
+.flagship-card__cta--line {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.flagship-card__cta--line:hover {
+    border-color: var(--muted);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .flagship-card--neon .flagship-card__cta--solid:hover,
+    .flagship-card--castor .flagship-card__cta--solid:hover,
+    .flagship-card--void .flagship-card__cta--solid:hover {
+        filter: none;
+    }
 }
 
 .section-head {
