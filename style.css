@@ -176,27 +176,7 @@ body {
     padding: 0;
     display: grid;
     gap: 1.25rem;
-    grid-template-columns: 1fr;
-}
-
-@media (min-width: 640px) {
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project-grid > li:last-child {
-        grid-column: 1 / -1;
-    }
-}
-
-@media (min-width: 900px) {
-    .project-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .project-grid > li:last-child {
-        grid-column: auto;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
 }
 
 .project-card {
