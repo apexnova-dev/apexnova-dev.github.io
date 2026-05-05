@@ -206,6 +206,20 @@ body {
     border-color: rgba(56, 189, 248, 0.22);
 }
 
+.project-card--wip {
+    border-color: rgba(245, 158, 11, 0.22);
+    background: linear-gradient(155deg, rgba(245, 158, 11, 0.06) 0%, rgba(26, 36, 51, 0.92) 40%, rgba(15, 20, 28, 0.88) 100%);
+}
+
+.project-card--wip:hover {
+    border-color: rgba(245, 158, 11, 0.35);
+}
+
+.project-card__dot--wip {
+    background: #f59e0b;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
 .project-card__meta {
     margin: 0 0 0.85rem;
     display: flex;
