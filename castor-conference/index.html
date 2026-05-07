@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Castor Conference App — independent React/TypeScript PWA for Pennsylvania EMS council conferences; attendance, state CE CSV, Supabase.">
+    <meta name="description" content="Castor — progressive web app for conference and event management. QR check-in, GPS validation, dynamic session tokens, offline-first.">
     <meta name="theme-color" content="#0f172a">
-    <title>Castor Conference App — overview</title>
+    <title>Castor — overview</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -24,47 +24,48 @@
 
     <main class="castor-main">
         <header class="castor-hero">
-            <p class="castor-hero__badge">Flagship · preview</p>
-            <h1 class="castor-hero__title">Castor Conference App</h1>
+            <p class="castor-hero__badge">Flagship · event management</p>
+            <h1 class="castor-hero__title">Castor</h1>
             <p class="castor-hero__tag">
-                A <strong>progressive web app</strong> for conferences run by <strong>Pennsylvania EMS councils</strong>: digital badges, staff scanner, geofenced self check-in with rolling <strong>room QR</strong> tokens (Supabase Edge Function), schedule and materials, speakers, vendors, CEUs, PDF certificates, and admin reporting with CSV exports suited to state continuing-education workflows.
+                A <strong>progressive web app</strong> for conferences, trainings, and multi-track events: digital badges, QR check-in, GPS-validated attendance, dynamic session tokens, credit tracking, PDF certificates, and admin reporting with CSV exports.
             </p>
         </header>
 
         <section class="castor-panel" aria-labelledby="what-heading">
             <h2 id="what-heading">What it is</h2>
             <p>
-                <strong>Castor</strong> targets real event day: multi-track schedules, session materials in Supabase Storage, mandatory evaluations before certificates,
-                announcements, registration CSV import, and admin exports (including one-row-per-attendee data for state bulk upload). Auth, database, and edge logic live in <strong>Supabase</strong>.
+                <strong>Castor</strong> handles the full event lifecycle: attendee registration, digital credentials, location-aware check-in, session access control, mandatory evaluations, and automated certificates. Organizers get real-time dashboards and bulk data exports.
             </p>
             <p>
-                Stack in the repo: <strong>React 18, TypeScript, Vite, Tailwind CSS, Supabase</strong> (auth, Postgres, Edge Functions) and PWA tooling. This GitHub Pages URL is static gallery copy; a runnable instance uses its own Supabase project, environment, migrations, and hosting (see the README and <em>docs/GETTING_STARTED.md</em> in the repository).
+                Stack: <strong>React 18, TypeScript, Vite, Tailwind CSS, Supabase</strong> (auth, Postgres, Edge Functions) and PWA tooling. Built mobile-first with offline capability — it works in crowded venues and remote training sites where connectivity is spotty.
             </p>
             <p>
-                <strong>Ownership:</strong> Castor is independent software maintained in the linked repository — not the property of any council unless that council adopts and operates its own deployment under its authority.
+                <strong>Built for:</strong> conferences, professional trainings, continuing education programs, corporate events, and trade shows.
             </p>
         </section>
 
         <div class="castor-pillars" role="list">
             <article class="castor-pillar" role="listitem">
                 <h3>On-site</h3>
-                <p>Badges, staff scanner, self check-in (geofence + room QR), schedule, bookmarks, and session materials.</p>
+                <p>Digital badges, staff scanner, self check-in with geofencing and room QR, schedule, bookmarks, and session materials.</p>
             </article>
             <article class="castor-pillar" role="listitem">
-                <h3>Credits</h3>
-                <p>CEU tracking, evaluations before certificates, PDF certificates with certification numbers, and admin <strong>state CE CSV</strong> exports for Pennsylvania-style bulk upload.</p>
+                <h3>Credentials</h3>
+                <p>Credit-hour tracking, evaluations before certificates, PDF certificates with certification numbers, and admin CSV exports for bulk reporting.</p>
             </article>
             <article class="castor-pillar" role="listitem">
                 <h3>Back office</h3>
-                <p>Admin dashboard, registrations (including CSV import), users, vendors, speaker profiles, announcements, and Room QR setup.</p>
+                <p>Admin dashboard, registrations, user management, vendors, speaker profiles, announcements, and room QR configuration.</p>
             </article>
         </div>
 
         <section class="castor-panel" aria-labelledby="status-heading">
             <h2 id="status-heading">Where things stand</h2>
             <p>
-                Development in the open includes SQL migrations under <strong>supabase/migrations</strong>, the <strong>validate-room-checkin</strong> Edge Function,
-                storage for document vault, and docs for pre-launch checks. Public demo URLs should be read as <strong>staging</strong> until a deployment is explicitly promoted for a live conference.
+                Castor is <strong>in active development</strong> after field-testing at real events. The repo includes SQL migrations, a Supabase Edge Function for room validation, storage for document vaults, and deployment guides. Public demo URLs are staging environments.
+            </p>
+            <p>
+                <strong>Origin:</strong> Originally developed for Pennsylvania EMS council continuing-education conferences, refined in a demanding, compliance-heavy environment.
             </p>
         </section>
 
@@ -78,7 +79,7 @@
         </div>
 
         <footer class="castor-footer">
-            <p>Castor Conference App · Apexnova</p>
+            <p>Castor · Apexnova</p>
         </footer>
     </main>
 </body>
